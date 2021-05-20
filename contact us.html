@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+ 
+  <link rel="stylesheet" href="contact us.css">
+  <script src= "Contact_us.js"></script>
+</head>
+<style> 
+        background-image:url(miles-burke-idhx-MOCDSk-unsplash)
+</style>
+        
+<body>
+    <div class="contact" id="contact">
+        <h2 onClick="toggleClass()">Get in touch with us <span>+</span></h2>
+
+        
+        <form name="Registration" onsubmit="return formValidation();">
+            <div class="row">
+                <div class="col-2">
+                    <label> Name</label>
+                    <input type="text" name="Username" class="text" placeholder="wellington" required>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <label>Email Address</label>
+                    <input type="text" name="email" class="text" placeholder="wgwavava@hit.ac.zw" required>
+                </div>
+                <div class="col-2">
+                    <label>Telephone</label>
+                    <input type="text" name="number" class="text" placeholder="+263-710085467" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label></label>
+                    <textarea placeholder="Write your message here..."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <input type="submit" name="" value="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    function toggleClass()
+    {
+        var element = document.getElementById("contact");
+        element.classList.toggle("active")
+    }
+</script>
+
+</body>
+</html>
